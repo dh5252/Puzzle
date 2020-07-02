@@ -13,14 +13,14 @@
 
   <body>
     <header>
-      <a href="Layout.html"><img src="Image\Logo1.png" width="200px"></a>
+      <a href="index.html"><img src="Image\Logo1.png" width="200px"></a>
       <ul class="menu">
         <li><a href="#">메뉴1</a></li>
         <li><a href="#">메뉴2</a></li>
       </ul>
     </header>
 
-
+    <br>
     <button onclick="writeCode()" class="Complete">WriteCode</button>
 
     <div class="Frame">
@@ -30,7 +30,7 @@
       <div class="Conclusion">
 
         <div class="Console">
-          <textarea id="result" placeholder="결과값"></textarea>
+          <textarea id="result" placeholder="콘솔 출력 값"></textarea>
         </div>
 
         <div class="Code">
@@ -45,14 +45,35 @@
       </div>
     </div>
 
-    <br><br>
+
     <footer>
-      <div class="foot1">
-        <br><br><br><br>
-        <span>개발자</span><br>
-        <span>백지오&nbsp&nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp&nbsp안치원&nbsp&nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp&nbsp장유성</span>
-      </div>
+        <span>Online Block Programming for beginner : <a id="DelveloperInfo" style="color : blue ">Team_Falcon</a></span><br>
     </footer>
+
+    <div id="InfoModal" class="modal">
+
+
+      <div class="modal-content">
+        <h2>Developer Information</h2>
+        <hr>
+
+        <strong>백지오</strong>
+        <p>세종대학교 컴퓨터공학과</p><br>
+
+        <strong>안치원</strong>
+        <p>세종대학교 컴퓨터공학과</p><br>
+
+        <strong>장유성</strong>
+        <p>세종대학교 컴퓨터공학과</p><br>
+
+        <p>2020 Summer Hackathon : Team_Falcon</p>
+        <br>
+
+        <span class="close">닫기</span>
+      </div>
+
+    </div>
+
 
 
     <xml id="toolbox" style="display: none">
@@ -392,6 +413,27 @@
             flag = 1;
           }
        }
+
+       var modal = document.getElementById('InfoModal');
+
+        var btn = document.getElementById("DelveloperInfo");
+
+        var span = document.getElementsByClassName("close")[0];
+
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
 
      </script>
 
