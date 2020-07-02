@@ -1,1 +1,1 @@
-# Brick
+# Puzzle
