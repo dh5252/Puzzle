@@ -7,20 +7,20 @@
     <script src="javascript_compressed.js"></script>
     <script src="python_compressed.js"></script>
     <script src="blocks_compressed.js"></script>
-    <script src="ko.js"></script>
+    <script src="en.js"></script>
   </head>
 
   <body>
     <header>
       <a href="index.html"><img class="logo" src="Image\Logo1.png" width="200px"></a>
       <ul class="menu">
-        <li><a href="index_Englishver.html">English</a></li>
-        <li><a href="#">Korean</a></li>
+        <li><a href="#">English</a></li>
+        <li><a href="index.html">Korean</a></li>
       </ul>
     </header>
 
     <br>
-    <button onclick="writeCode()" class="Complete">실행</button>
+    <button onclick="writeCode()" class="Complete">RUN</button>
 
     <div class="Frame">
 
@@ -29,7 +29,7 @@
       <div class="Conclusion">
 
         <div class="Console">
-          <textarea id="result" placeholder="콘솔 출력 값"></textarea>
+          <textarea id="result" placeholder="OUTPUT"></textarea>
         </div>
 
         <div class="Code">
@@ -37,7 +37,7 @@
             <p>Code <button onclick="onoff()">ON/OFF</button></p>
           </div>
           <div id="OnOffButton">
-            <textarea id="Converttocode" placeholder="변환된 파이썬 코드"></textarea>
+            <textarea id="Converttocode" placeholder="CODE"></textarea>
           </div>
         </div>
 
@@ -76,7 +76,7 @@
 
 
     <xml id="toolbox" style="display: none">
-    <category name="논리식" colour="210">
+    <category name="Logic" colour="210">
       <block type="controls_if"></block>
       <block type="logic_compare"></block>
       <block type="logic_operation"></block>
@@ -85,7 +85,7 @@
       <block type="logic_null"></block>
       <block type="logic_ternary"></block>
     </category>
-    <category name="반복문" colour="120">
+    <category name="Loops" colour="120">
       <block type="controls_repeat_ext">
         <value name="TIMES">
           <shadow type="math_number">
@@ -114,7 +114,7 @@
       <block type="controls_forEach"></block>
       <block type="controls_flow_statements"></block>
     </category>
-    <category name="산술식" colour="230">
+    <category name="Math" colour="230">
       <block type="math_number"></block>
       <block type="math_arithmetic">
         <value name="A">
@@ -201,7 +201,7 @@
       </block>
       <block type="math_random_float"></block>
     </category>
-    <category name="텍스트" colour="160">
+    <category name="Text" colour="160">
       <block type="text"></block>
       <block type="text_join"></block>
       <block type="text_append">
@@ -278,7 +278,7 @@
         </value>
       </block>
     </category>
-    <category name="리스트" colour="260">
+    <category name="Lists" colour="260">
       <block type="lists_create_with">
         <mutation items="0"></mutation>
       </block>
@@ -329,7 +329,7 @@
       </block>
       <block type="lists_sort"></block>
     </category>
-    <category name="색상" colour="20">
+    <category name="Colour" colour="20">
       <block type="colour_picker"></block>
       <block type="colour_random"></block>
       <block type="colour_rgb">
@@ -368,8 +368,8 @@
       </block>
     </category>
     <sep></sep>
-    <category name="변수" colour="330" custom="VARIABLE"></category>
-    <category name="함수" colour="290" custom="PROCEDURE"></category>
+    <category name="Variables" colour="330" custom="VARIABLE"></category>
+    <category name="Functions" colour="290" custom="PROCEDURE"></category>
   </xml>
   <script>
        function apd(a, b){

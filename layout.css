@@ -1,6 +1,7 @@
 html, body{
   margin : 0;
   padding : 0;
+  font-family: "나눔고딕", ""
 }
 
 ul li {
@@ -9,7 +10,7 @@ ul li {
 
 
 header{
-   border-bottom : 1px solid black;
+   border-bottom : 1px solid #CCCCCC;
 }
 
 a{
@@ -24,18 +25,23 @@ header ul{
   display : inline-block;
   margin-top: 30px;
   vertical-align: top;
-
+  float:right;
 }
 
 header ul li{
   display : inline-block;
-  margin-left: 10px;
+  margin-right: 20px;
 }
 
 header ul li a{
   text-decoration: none;
   color : black;
 }
+.logo{
+  margin: 0px 0px 0px 50px;
+}
+
+
 
 .modal {
   display: none;
@@ -133,9 +139,11 @@ button{
   /*color:white;*/ /*글자 색 흰색*/
   background-color:#A9F5E1; /*배경 색 skyblue*/
   font-size:0.9em; /*글자 크기 1.5em*/
-  border-radius:0.8em;  /*테두리 0.8em만큼 둥글게설정*/
-  padding: 0px 5px;  /*상하 5px, 좌우 10px 안쪽여백*/
-  border-color: gray; /*테두리색 cyan*/
+  border-radius:0.5em;  /*테두리 0.8em만큼 둥글게설정*/
+  padding: 0px 20px;  /*상하 5px, 좌우 10px 안쪽여백*/
+  border-color: white; /*테두리색 cyan*/
+  border: 0;
+  outline: 0;
 }
 
 
